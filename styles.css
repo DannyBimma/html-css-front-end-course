@@ -1,25 +1,16 @@
+/* Universal Selector */
 * {
   /* border: 5px solid black; */
   margin: 0;
   padding: 0;
 }
 
+/* Element Selectors */
 body {
   color: #4f4f4f;
   font-family: monospace;
   position: relative;
 }
-
-/* h1,
-h2,
-h3,
-h4,
-p,
-li,
-footer {
-  color: #4f4f4f;
-  font-family: monospace;
-} */
 
 h1,
 h2,
@@ -34,6 +25,7 @@ h1 {
 }
 
 h2 {
+  position: relative;
   font-size: 48px;
   margin-bottom: 30px;
 }
@@ -74,7 +66,7 @@ li:last-child {
   margin-bottom: 0;
 }
 
-/* CSS Pseudo-classes Example */
+/* CSS Pseudo-class Selectors */
 
 /* li:first-child {
   text-decoration: underline;
@@ -104,6 +96,44 @@ footer {
   text-align: center;
 }
 
+/* Link Styling (must be in this order -LVHA-) */
+a:link,
+a:visited {
+  color: #00baae;
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: #4f4f4f; */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a:active {
+  font-size: xx-large;
+}
+
+/* Pseudo-element Selectors */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 14px;
+}
+
+h2::after {
+  content: "DE-TOP";
+  display: inline-block;
+  color: #000000;
+  background-color: #ffff00;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 24px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10;
+  right: -20;
+}
+
+/* Class Selectors */
 .main-container {
   width: 90%;
   margin: 0 auto;
@@ -146,21 +176,4 @@ footer {
   position: absolute;
   bottom: 44px;
   right: 44px;
-}
-
-/* Link Styling (must be in this order -LVHA-) */
-a:link,
-a:visited {
-  color: #00baae;
-  text-decoration: none;
-}
-
-a:hover {
-  /* color: #4f4f4f; */
-  font-weight: bold;
-  font-size: 16px;
-}
-
-a:active {
-  font-size: xx-large;
 }
