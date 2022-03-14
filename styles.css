@@ -134,6 +134,12 @@ h2::after {
 }
 
 /* Class Selectors */
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .main-container {
   width: 90%;
   margin: 0 auto;
@@ -141,6 +147,9 @@ h2::after {
 }
 
 .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 60px;
@@ -158,15 +167,34 @@ h2::after {
 #author {
   font-style: italic;
   font-size: 12.5px;
+  margin-left: 1rem;
+  margin-bottom: 0;
 }
 
 .authors {
   font-size: 12.5px;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 .related-post-list {
   list-style: none;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .like-button {
